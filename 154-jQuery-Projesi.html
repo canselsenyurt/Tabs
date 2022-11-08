@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<title>Untitled Document</title>
+<link rel="stylesheet" type="text/css" href="sample-2.css" />
+</head>
+
+<body>
+<h1>Tabs</h1>
+<div class="tabs">
+	<nav class="tab-list">
+    <a class="tab active" href="#one">One</a>
+    <a class="tab" href="#two">Two</a>
+    <a class="tab" href="#three">Three</a>
+    </nav>
+    
+    <div id="one" class="tab-content show">
+    Est iusto vocibus ancillae et, mea ad dissentiunt efficiantur, veritus vivendo maluisset eos te. Nemore fastidii no mel, everti praesent temporibus est ne, vis veri nusquam pericula an. At nec summo choro erroribus, duis melius ei nam. Ut vel altera docendi, at mei virtute gubergren. Ex maiestatis percipitur sea. Vel meliore imperdiet ut. Amet quodsi sit ex.
+    
+    Timeam fabulas id mea. Suas officiis inciderint in eos. An vim vidit suavitate maiestatis, eu eum brute dolores conclusionemque. In eam oblique vivendo, ei accusam tractatos philosophia pro, no vide postea adolescens vim. No eam facilis epicuri appetere.
+    </div>
+        <div id="two" class="tab-content">
+  Nullam explicari eloquentiam in mei. Blandit indoctum usu et, nostro repudiandae ea mel, consul quodsi qualisque et sit. Pri no forensibus reformidans, no lorem nihil corpora sea. Ad vix iisque volutpat euripidis, mea at quidam minimum copiosae. Ea vel everti discere delicatissimi, ea est ceteros perfecto, mel suscipit epicurei ut. Ne nostro aliquid sit, eos ei dicunt volumus neglegentur.
+    </div>
+    <div id="three" class="tab-content">
+    In a professional context it often happens that private or corporate clients corder a publication to be made and presented with the actual content still not being ready. Think of a news blog that's filled with content hourly on the day of going live. However, reviewers tend to be distracted by comprehensible content, say, a random text copied from a newspaper or the internet. The are likely to focus on the text, disregarding the layout and its elements. Besides, random text risks to be unintendedly humorous or offensive, an unacceptable risk in corporate environments. Lorem ipsum and its many variants have been employed since the early 1960ies, and quite likely since the sixteenth century.
+    </div>
+    </div>
+    <script type="text/javascript">
+		$(".tab-list").on("click",".tab", function(){
+			$(".tab"). removeClass("active");
+			$(".tab-content"). removeClass("show");
+			$(this).addClass("active");
+			$($(this).attr("href")).addClass("show")
+		});
+</script>
+
+</body>
+</html>
